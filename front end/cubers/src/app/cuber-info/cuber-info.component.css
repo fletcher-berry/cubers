@@ -1,0 +1,130 @@
+#edit-button{
+    width: 100px;
+    height: 60px;
+    background-color: dodgerblue;
+    font-size: 200%;
+    float: right;
+    position: relative;
+    top: -5px;
+}
+
+#back-button{
+    width: 100px;
+    height: 60px;
+    background-color: #771166;
+    font-size: 200%;
+    float: left;
+    position: relative;
+    top: -5px;
+    border: 3px black solid;
+}
+
+
+#stats{
+    width: 80%;
+    margin: auto;
+    background-color: #fdc;
+    border-radius: 15px;
+    padding-top: 5px;
+}
+
+#stats-title{
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#stats-card-container{
+    padding: 15px 0px;
+}
+
+.stats-card{
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.stats-event-name{
+    font-size: 200%;
+    font-weight: bold;
+}
+.stats-best{
+    font-size: 170%
+}
+.stats-average{
+    font-size: 170%;
+}
+
+#solves{
+    width: 80%;
+    margin: auto;
+    background-color: #feb;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+#solves-title{
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.solve-group-container{
+    width: 26%;
+    margin: 20px 3%;
+    float: left;
+    border-radius: 12px;
+    border: 2px black solid;
+}
+
+.solves-event-name{
+    font-size: 170%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.solves-list{
+    font-size: 150%
+}
+.solve{
+    margin: 8px 15px;
+}
+
+#metadata-list{
+    width: 80%;
+    margin: auto;
+    background-color: #deb;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+#metadata-title{
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.metadata{
+    font-size: 170%;
+    margin: 4px 0px;
+}
+.metadata-key{
+    margin-left: 10%;
+    margin-right: 0%;
+    width: 38%;
+    float: left;
+    text-align: right;
+}
+.metadata-value{
+    margin-left: 0%;
+    margin-right: 10%;
+    width: 38%;
+    float: right;
+    text-align: left;
+}

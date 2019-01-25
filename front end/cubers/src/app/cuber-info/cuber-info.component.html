@@ -1,0 +1,62 @@
+<div id="container"  *ngIf="cuber != null">
+    <div id="header">
+        <div id="title">{{cuber.name}}</div>
+        <button id="back-button" (click)="backButtonClick()">Back</button>
+        <button id="edit-button" (click)="editButtonClick()">Edit</button>
+    </div>
+    <div id="content">
+      <div id="stats">
+          <div id="stats-title">Stats</div>
+          <div id="stats-card-container">
+              <div class="stats-card">
+                  <div class="stats-event-name">3x3</div>
+                  <div id="stats-best-3x3" class="stats-best">Best: {{best3x3}}</div>
+                  <div id="stats-avg-3x3" class="stats-average">Average: {{average3x3}}</div>
+              </div>
+              <div class="stats-card">
+                  <div class="stats-event-name">3x3 OH</div>
+                  <div id="stats-best-oh" class="stats-best">Best: {{bestOh}}</div>
+                  <div id="stats-avg-oh" class="stats-average">Average: {{averageOh}}</div>
+              </div>
+              <div class="stats-card">
+                  <div class="stats-event-name">4x4</div>
+                  <div id="stats-best-4x4" class="stats-best">Best: {{best4x4}}</div>
+                  <div id="stats-avg-4x4" class="stats-average">Average: {{average4x4}}</div>
+              </div>
+              <div class="clear"></div>
+          </div>
+      </div>
+        <div id="solves">
+            <div id="solves-title">Solves</div>
+            <div id="solves-container">
+                <div class="solve-group-container">
+                    <div class="solves-event-name">3x3</div>
+                    <ul id="solves-list-3x3" class="solves-list">
+                        <li class="solve" *ngFor="let time of cuber.solves3x3">{{time}}</li>
+                    </ul>
+                </div>
+                <div class="solve-group-container">
+                    <div class="solves-event-name">3x3 OH</div>
+                    <ul id="solves-list-oh" class="solves-list">
+                        <li class="solve" *ngFor="let time of cuber.solvesOh">{{time}}</li>
+                    </ul>
+                </div>
+                <div class="solve-group-container">
+                    <div class="solves-event-name">4x4</div>
+                    <ul id="solves-list-4x4" class="solves-list">
+                        <li class="solve" *ngFor="let time of cuber.solves4x4">{{time}}</li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="metadata-list">
+            <div id="metadata-title">Metadata</div>
+            <div class="metadata" *ngFor="let meta of cuber.metadata">
+                <div class="metadata-key">{{meta.key}}:</div>
+                <div class="metadata-value">{{meta.value}}</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>

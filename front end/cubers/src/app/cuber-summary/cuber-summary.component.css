@@ -1,0 +1,117 @@
+#general-description{
+    font-size: 180%;
+    margin-left: 50px;
+}
+#top-cubers{
+    border: 3px black solid;
+    border-radius: 25px;
+    width: 70%;
+    padding: 10px 25px;
+    margin: auto;
+    margin-top: 10px;
+}
+#top-cuber-description{
+    font-size: 150%;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#top-cuber-results{
+    width: 90%;
+    margin: auto;
+    padding: 5px, 0px;
+}
+.top-cuber-result{
+    width: 30%;
+    margin: 25px 10px;
+    padding: 5px 0px;
+    float: left;
+    background-color: antiquewhite;
+    border: 1px black solid;
+    border-radius: 20px;
+    font-size: 150%;
+    text-align: center;
+}
+.top-result-event{
+    font-weight: bold;
+}
+
+#cuber-list-container{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#cuber-list-description{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 170%;
+    float: left;
+}
+#add-cuber{
+    padding: 0px 10px;
+    font-size: 250%;
+    background-color: #55f;
+    float: left;
+    border-radius: 10px;
+    border: 1px black solid;
+    position: relative;
+    left: 50px;
+    top: -10px;
+}
+#cuber-list{
+    padding: 5px 20px;
+}
+.cuber{
+    width: 80%;
+}
+.cuber-content{
+    width: 80%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background-color: #bde;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 130%;
+    padding: 6px 10px;
+    border: 1px black solid;
+    float: left;
+    text-decoration: none;
+    color: black;
+}
+.cuber-content:hover{
+    background-color: #a8c8d8;
+}
+.cuber-content div{
+    position: relative;
+    top: 8px;
+}
+.cuber-delete{
+    float: left;
+    font-size: 150%;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: #f55;
+    position: relative;
+    left: 30px;
+    top: 16px;
+}
+.cube-image{
+    width: 40px;
+    float:left
+}
+.cuber-name{
+    float: left;
+    width: 25%;
+    padding-left: 5%;
+}
+.cuber-pb-3x3{
+    float: left;
+    width: 20%;
+}
+.cuber-pb-oh{
+    float: left;
+    width: 23%;
+}
+.cuber-pb-4x4{
+    float: left;
+    width: 20%;
+}

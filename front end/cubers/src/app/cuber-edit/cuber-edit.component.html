@@ -1,0 +1,36 @@
+<div id="container" *ngIf="cuber != null">
+    <div id="header">
+        <div id="title">{{cuber.name != null && cuber.name.trim() != ""? cuber.name : "your name here"}}</div>
+        <button id="back-button" (click)="backButtonClick()">Back</button>
+        <button id="save-button" (click)="saveButtonClick()">Save</button>
+    </div>
+    <div id="content">
+        <div id="container-name">
+            Name: <input id="input-name" type="text" placeholder="your name here" [(ngModel)]="cuber.name" />
+        </div>
+        <div class="container-solves">
+            <label class="solve-label">3x3 solves: </label>
+            <textarea id="input-solves-3x3" rows="5" cols="60" [(ngModel)]="list3x3"></textarea>
+        </div>
+        <div class="container-solves">
+            <label class="solve-label">OH solves: </label>
+            <textarea id="input-solves-oh" rows="5" cols="60" [(ngModel)]="listOh"></textarea>
+        </div>
+        <div class="container-solves">
+            <label class="solve-label">4x4 solves: </label>
+            <textarea id="input-solves-4x4" rows="5" cols="60" [(ngModel)]="list4x4"></textarea>
+        </div>
+        <div id="container-metadata">
+            <div id="metadata-header">Metadata</div>
+            <button id="add-metadata" (click)="addMetaButtonClick()">+</button>
+            <div class="clear"></div>
+              <div class="metadata-row-edit" *ngFor="let meta of cuber.metadata; let index = index;trackBy:trackByIndex;">
+                  <label class="metadata-key-label">Key: </label>
+                  <input class="metadata-key-input" type="text" [(ngModel)]="cuber.metadata[index].key" />
+                  <label class="metadata-value-label"> Value: </label>
+                  <input class="metadata-value-input" type="text" [(ngModel)]="cuber.metadata[index].value" />
+                  <button class="metadata-delete" (click)="removeMetaButtonClick(index)">Delete</button>
+              </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div id="container">
+    <div id="header">
+        <div id="title">Cubers</div>
+    </div>
+    <div id="content" *ngIf="summary != null">
+        <div id="general-description">
+            This page stores information about cubers.  Click a cuber to see more details about that cuber.
+        </div>
+        <div id="top-cubers">
+            <div id="top-cuber-description">
+                Current Leaders:
+            </div>
+            <div id="top-cuber-results">
+                <div class="top-cuber-result">
+                    <div class="top-result-event">3x3</div>
+                    <div id="3x3name" class="top-result-name">{{summary.leaders.name3x3}}</div>
+                    <div id="3x3time" class="top-result-time">{{summary.leaders.time3x3}}</div>
+                </div>
+                <div class="top-cuber-result">
+                    <div class="top-result-event">3x3 OH</div>
+                    <div id="ohname" class="top-result-name">{{summary.leaders.nameOh}}</div>
+                    <div id="ohtime" class="top-result-time">{{summary.leaders.timeOh}}</div>
+                </div>
+                <div class="top-cuber-result">
+                    <div class="top-result-event">4x4</div>
+                    <div id="4x4name" class="top-result-name">{{summary.leaders.name4x4}}</div>
+                    <div id="4x4time" class="top-result-time">{{summary.leaders.time4x4}}</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="cuber-list-container">
+            <div id="cuber-list-description">All Cubers:</div>
+            <button id="add-cuber" (click)="addButtonClick()">+</button>
+            <div class="clear"></div>
+            <div id="cuber-list">
+                <div class="cuber" *ngFor="let cuber of summary.cubers; let index = index;trackBy:trackByIndex;" (click)="cuberClick(index)">
+                    <div class="cuber-content">
+                        <img class="cube-image" src="assets/cube.png" />
+                        <div class="cuber-name">{{cuber.cuberName}}</div>
+                        <div class="cuber-pb-3x3">3x3: {{cuber.pb3x3}}</div>
+                        <div class="cuber-pb-oh">3x3 OH: {{cuber.pbOh}}</div>
+                        <div class="cuber-pb-4x4">4x4: {{cuber.pb4x4}}</div>
+                    </div>
+                    <button class="cuber-delete" (click)="cuberDelete(index)">Delete</button>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

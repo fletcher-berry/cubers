@@ -1,0 +1,73 @@
+#content{
+    padding-left: 5%;
+    font-size: 140%;
+}
+#save-button{
+    width: 100px;
+    height: 60px;
+    background-color: mediumseagreen;
+    font-size: 200%;
+    float: right;
+    position: relative;
+    top: -5px;
+}
+#back-button{
+    width: 100px;
+    height: 60px;
+    background-color: #771166;
+    font-size: 200%;
+    float: left;
+    position: relative;
+    top: -5px;
+    border: 3px black solid;
+}
+#container-name{
+    position: relative;
+    left: 42px;
+}
+.container-solves{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.solve-label{
+    vertical-align: top;
+}
+
+input{
+    font-size: 100%;
+}
+textarea{
+    font-size: 90%;
+}
+#container-metadata{
+    margin-top: 20px;
+}
+#metadata-header{
+    margin-bottom: 10px;
+    float: left;
+}
+#add-metadata{
+    padding: 0px 7px;
+    font-size: 150%;
+    background-color: #55f;
+    float: left;
+    border-radius: 7px;
+    border: 1px black solid;
+    position: relative;
+    left: 40px;
+    top: -6px;
+}
+.metadata-row-edit{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    left: 57px;
+}
+.metadata-delete{
+    font-size: 90%;
+    padding: 4px 6px;
+    border-radius: 7px;
+    background-color: #f55;
+    position: relative;
+    left: 20px;
+}
